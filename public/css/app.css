@@ -1,0 +1,15 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 80px;
+}
+
+.footer {
+  bottom: 0;
+  height: 80px;
+}
+
+/*# sourceMappingURL=app.css.map */
