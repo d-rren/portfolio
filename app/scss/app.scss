@@ -1,18 +1,17 @@
-// Variables
-$footer_height: 80px;
-// make separate scss file for color variables
+@use 'variables';
+@use 'theme';
 
-// Custom CSS
+// Custom SCSS
 html {
 	position: relative;
 	min-height: 100%;
 }
 
 body {
-	margin-bottom: $footer_height;
+	margin-bottom: variables.$footer_height;
 }
 
 .footer {
 	bottom: 0;
-	height: $footer_height;
+	height: variables.$footer_height;
 }
