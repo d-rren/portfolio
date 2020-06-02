@@ -1,0 +1,17 @@
+@use 'variables';
+@use 'theme';
+
+// Custom SCSS
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: variables.$footer_height;
+}
+
+.footer {
+	bottom: 0;
+	height: variables.$footer_height;
+}
