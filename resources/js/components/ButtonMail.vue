@@ -1,8 +1,8 @@
 <template>
-  <a href="#" class="btn btn-primary">
-    <i class="material-icons material-icons-outlined md-18" v-if="icon">{{ icon }}</i>
-    <span v-if="text">{{ text }}</span>
-    <span v-else>Contact Me</span>
+  <a href="#" class="btn btn-primary rounded-0 d-inline-block py-2">
+    <i class="material-icons md-18 align-middle" v-if="icon">{{ icon }}</i>
+    <span class="align-middle" v-if="text">{{ text }}</span>
+    <span class="align-middle" v-else>Contact Me</span>
   </a>
 </template>
 

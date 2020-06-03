@@ -22,3 +22,11 @@ body {
 		@extend %grayscale;
 	}
 }
+
+#scroll-to-top {
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 100;
+	opacity: 0;
+	transition: opacity ease 0.75s;
+}
