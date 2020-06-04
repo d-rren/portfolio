@@ -35,3 +35,13 @@ body {
 	outline: none;
 	box-shadow: none;
 }
+
+.card-img-zoom {
+	overflow: hidden;
+}
+.card-img-zoom img {
+	transition: transform ease .5s;
+}
+.card-img-zoom:hover img {
+	transform: scale(1.2);
+}
