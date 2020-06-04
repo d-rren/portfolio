@@ -30,3 +30,8 @@ body {
 	opacity: 0;
 	transition: opacity ease 0.75s;
 }
+
+#scroll-to-top:focus {
+	outline: none;
+	box-shadow: none;
+}
