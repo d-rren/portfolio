@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "material-icons": "^0.3.1",
