@@ -1,5 +1,5 @@
 <template>
-  <div class="card w-100 bg-dark rounded-0 border-0 shadow-sm d-inline-block">
+  <div class="card w-100 bg-dark rounded-0 border-0 shadow-sm d-inline-block card-img-zoom">
     <img :src="src" class="card-img rounded-0" alt="" v-if="src">
     <div class="card-img-overlay d-flex align-items-end" v-if="title">
       <p class="text-muted mx-auto">{{ title }}</p>

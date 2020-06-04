@@ -1,7 +1,48 @@
 // Theme Colors
 
+// Body
+$body-bg: #f7f7f7;
+
+// Color Variables
+$blue: #012F50;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #00A86B;
+$teal: #4dc0b5;
+$cyan: #5DC9B6;
 $black : #000000;
 $white: #FFFFFF;
 $grey: #555555;
 $dark-grey: #121212;
 $light-grey: #CCCCCC;
+
+// Custom Theme Colors
+$theme-colors: (
+	"primary": 	$blue,
+	"secondary":$indigo,
+	"success": 	$green,
+	"info": 	$teal,
+	"danger": 	$red,
+	"blue": 	$blue,
+	"indigo": 	$indigo,
+	"purple": 	$purple,
+	"pink": 	$pink,
+	"red": 		$red,
+	"orange": 	$orange,
+	"yellow": 	$yellow,
+	"green": 	$green,
+	"teal": 	$teal,
+	"cyan": 	$cyan,
+	"black": 	$black,
+    "white": 	$white,
+	"grey": 	$grey,
+    "dark-grey": $dark-grey,
+    "light-grey": $light-grey,
+);
+
+$enable-gradients: false;
+$enable-responsive-font-sizes: true !default;

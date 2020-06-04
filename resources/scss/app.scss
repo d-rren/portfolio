@@ -1,32 +1,4 @@
-@use 'variables';
-@use 'theme';
-@use 'filters';
-
-// Custom SCSS
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-body {
-	margin-bottom: variables.$footer_height;
-}
-
-.footer {
-	bottom: 0;
-	height: variables.$footer_height;
-}
-
-.card {
-	img {
-		@extend %grayscale;
-	}
-}
-
-#scroll-to-top {
-	bottom: 1rem;
-	right: 1rem;
-	z-index: 100;
-	opacity: 0;
-	transition: opacity ease 0.75s;
-}
+@import 'theme';
+@import '~bootstrap/scss/bootstrap';
+@import 'material-icons';
+@import 'custom';

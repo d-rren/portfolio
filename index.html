@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap & App CSS -->
+    <link rel="stylesheet" type="text/css" href="public/css/app.css">
     <!-- Material Icons CSS -->
     <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
-    <!-- App CSS -->
-    <link rel="stylesheet" type="text/css" href="public/css/app.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
     <title>d.rren | photography</title>
 
     <!-- TO-DO: Add favicon -->
   </head>
-  <body class="bg-light">
+  <body>
     <div id="app">
       <main class="container-fluid">
 
@@ -24,28 +24,28 @@
           <i class="material-icons">keyboard_arrow_up</i>
         </link-scroll>
 
-        <section id="header" class="p-3 p-lg-5 text-center">
+        <section id="header" class="p-3 p-lg-5 text-center" data-aos="fade-down">
           <h1 class="display-1 d-none d-lg-block">@d.rren photography</h1>
           <h1 class="d-lg-none text-left">@d.rren photography</h1>
         </section>
 
-        <section id="photos" class="card-columns">
-          <card-image src="https://picsum.photos/200/300" title="Sample Title"></card-image>
+        <section id="photos" class="card-columns" data-aos="fade-up" data-aos-delay="750">
+          <card-image src="public/img/cards/200-300.jpg" title="Sample Title"></card-image>
 
-          <card-image src="https://picsum.photos/200"></card-image>
+          <card-image src="public/img/cards/200-200.jpg"></card-image>
 
-          <card-image src="https://picsum.photos/200/350"></card-image>
+          <card-image src="public/img/cards/200-350.jpg"></card-image>
 
-          <card-image src="https://picsum.photos/200/250" title="Another Sample Title"></card-image>
+          <card-image src="public/img/cards/200-250.jpg" title="Another Sample Title"></card-image>
 
-          <card-image src="https://picsum.photos/200/140"></card-image>
+          <card-image src="public/img/cards/200-140.jpg"></card-image>
 
-          <card-image src="https://picsum.photos/200/280"></card-image>
+          <card-image src="public/img/cards/200-280.jpg"></card-image>
 
-          <card-image src="https://picsum.photos/200/150"></card-image>
+          <card-image src="public/img/cards/200-150.jpg"></card-image>
         </section>
 
-        <section id="contact">
+        <section id="contact" data-aos="fade">
           <card-basic title="Contact Me" class="mt-4 text-center">
             <p class="lead text-muted">For business inquiries, don't hesitate to reach me at sample@email.com!</p>
             <button-mail text="Send me an email" icon="mail" class="w-100"></button-mail>
@@ -66,6 +66,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AOS JavScript -->
+    <script src="node_modules/aos/dist/aos.js"></script> 
     <!-- App JavaScript -->
     <script src="public/js/app.js"></script>
   </body>
