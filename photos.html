@@ -25,17 +25,23 @@
         </link-scroll>
 
         <section id="header" class="p-3 p-lg-5 text-center" data-aos="fade-down">
-          <a href="index.html" class="text-black">
-            <h1 class="display-1 d-none d-lg-block">@d.rren photography</h1>
-            <h1 class="d-lg-none text-left">@d.rren photography</h1>
-          </a>
+          <h1 class="display-1 d-none d-lg-block">
+            <a href="index.html" class="text-black">
+              @d.rren photography
+            </a>
+          </h1>
+          <h1 class="d-lg-none text-left">
+            <a href="index.html" class="text-black">
+              @d.rren photography
+            </a>
+          </h1>
         </section>
 
         <div class="d-flex flex-row overflow-auto sticky-top shadow-sm" id="filterContainer" data-aos="fade-up" data-aos-delay="300">
-          <button-filter text="Show All" class="active" onclick="filterSelection('all')"></button-filter>
-          <button-filter text="Show Nature" onclick="filterSelection('nature')"></button-filter>
-          <button-filter text="Show Cars" onclick="filterSelection('cars')"></button-filter>
-          <button-filter text="Show People" onclick="filterSelection('people')"></button-filter>
+          <button-filter text="All Photos" class="active" onclick="filterSelection('all')"></button-filter>
+          <button-filter text="Nature" onclick="filterSelection('nature')"></button-filter>
+          <button-filter text="Cars" onclick="filterSelection('cars')"></button-filter>
+          <button-filter text="People" onclick="filterSelection('people')"></button-filter>
         </div>
 
         <section id="photos" class="card-columns mt-4" data-aos="fade-up" data-aos-delay="550">
@@ -72,7 +78,7 @@
           </card-image>
         </section>
 
-        <div class="d-flex justify-content-center overflow-auto">
+        <div class="d-flex justify-content-center overflow-auto" data-aos="fade-up" data-aos-delay="550">
           <a href="index.html" class="link lead">
             <i class="material-icons md-18 mr-1">arrow_back</i>
             Home
