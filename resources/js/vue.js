@@ -20,6 +20,7 @@ const files = require.context('./', true, /\.vue$/i);
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('button-mail', require('./components/ButtonMail.vue').default);
+Vue.component('button-filter', require('./components/ButtonFilter.vue').default);
 Vue.component('card-basic', require('./components/CardBasic.vue').default);
 Vue.component('card-image', require('./components/CardImage.vue').default);
 Vue.component('link-scroll', require('./components/LinkScroll.vue').default);

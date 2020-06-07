@@ -31,51 +31,55 @@
           </a>
         </section>
 
-        <section id="photos" class="card-columns" data-aos="fade-up" data-aos-delay="550">
-          <card-image image="public/img/cards/200-300.jpg" title="Sample Title"></card-image>
+        <div class="d-flex flex-row overflow-auto sticky-top shadow-sm" id="filterContainer" data-aos="fade-up" data-aos-delay="300">
+          <button-filter text="Show All" class="active" onclick="filterSelection('all')"></button-filter>
+          <button-filter text="Show Nature" onclick="filterSelection('nature')"></button-filter>
+          <button-filter text="Show Cars" onclick="filterSelection('cars')"></button-filter>
+          <button-filter text="Show People" onclick="filterSelection('people')"></button-filter>
+        </div>
 
-          <card-image image="public/img/cards/200-200.jpg"></card-image>
+        <section id="photos" class="card-columns mt-4" data-aos="fade-up" data-aos-delay="550">
+          <card-image image="public/img/nature/1.jpg" title="Sample Title"
+            tags="nature">
+          </card-image>
 
-          <card-image image="public/img/cards/200-350.jpg"></card-image>
+          <card-image image="public/img/people/1.jpeg"
+            tags="people">
+          </card-image>
 
-          <card-image image="public/img/cards/200-250.jpg" title="Another Sample Title"></card-image>
+          <card-image image="public/img/nature/2.jpg"
+            tags="nature">
+          </card-image>
 
-          <card-image image="public/img/cards/200-140.jpg"></card-image>
+          <card-image image="public/img/cars/1.jpeg" title="Another Sample Title"
+            tags="cars">
+          </card-image>
 
-          <card-image image="public/img/cards/200-280.jpg"></card-image>
+          <card-image image="public/img/people/2.jpeg"
+            tags="people nature">
+          </card-image>
 
-          <card-image image="public/img/cards/200-150.jpg"></card-image>
+          <card-image image="public/img/cars/2.jpeg"
+            tags="cars">
+          </card-image>
+
+          <card-image image="public/img/nature/3.jpeg"
+            tags="nature">
+          </card-image>
+
+          <card-image image="public/img/people/3.jpeg"
+            tags="people">
+          </card-image>
         </section>
 
         <div class="d-flex justify-content-center overflow-auto">
-          <a href="photos.html" class="link lead">
-            View More Photos
-            <i class="material-icons md-18 ml-1">arrow_forward</i>
+          <a href="index.html" class="link lead">
+            <i class="material-icons md-18 mr-1">arrow_back</i>
+            Home
           </a>
         </div>
 
-        <section id="instagram" data-aos="fade-up">
-          <card-basic title="Follow me on Instagram!" href="https://www.instagram.com/d.rren/" class="mt-4 text-center">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-5e292708-b926-4e52-8487-51d97730141f"></div>
-          </card-basic>
-        </section>
-
-        <section id="contact" data-aos="fade" class="mb-3 mb-lg-4">
-          <card-basic title="Contact Me" class="mt-4 text-center">
-            <p class="lead text-muted">For business inquiries, don't hesitate to reach me at sample@email.com!</p>
-            <button-mail text="Send me an email" icon="mail" class="w-100"></button-mail>
-          </card-basic>
-        </section>
-
       </main>
-
-      <div class="parallax-window d-flex justify-content-center" data-parallax="scroll" data-image-src="https://picsum.photos/1000" style="height: 100vh">
-        <div class="align-self-center bg-black text-white px-3 py-1">
-          <h1 class="display-3 d-none d-lg-block">@d.rren photography</h1>
-          <h1 class="d-lg-none">@d.rren photography</h1>
-        </div>
-      </div>
 
       <footer class="footer d-flex position-absolute w-100">
         <div class="container text-center align-self-center">
