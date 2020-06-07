@@ -9,3 +9,8 @@
 	-webkit-filter: blur(1rem);
 	filter: blur(1rem);
 }
+
+%no-outline {
+	outline: none;
+	box-shadow: none;
+}
