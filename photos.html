@@ -47,6 +47,12 @@
         <section id="photos" class="card-columns mt-4" data-aos="fade-up" data-aos-delay="550">
           <card-image image="public/img/nature/1.jpg" title="Sample Title"
             tags="nature">
+            <template v-slot:options>
+              <options-dropdown>
+                <a href="#" class="dropdown-item" target="_blank">Link</a>
+                <a href="#" class="dropdown-item" target="_blank">Link</a>
+              </options-dropdown>
+            </template>
           </card-image>
 
           <card-image image="public/img/people/1.jpeg"
@@ -78,7 +84,7 @@
           </card-image>
         </section>
 
-        <div class="d-flex justify-content-center overflow-auto" data-aos="fade-up" data-aos-delay="550">
+        <div class="d-flex justify-content-center overflow-auto" data-aos="zoom-in-left" data-aos-delay="550">
           <a href="index.html" class="link lead">
             <i class="material-icons md-18 mr-1">arrow_back</i>
             Home
