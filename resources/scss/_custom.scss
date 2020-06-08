@@ -1,10 +1,12 @@
 @use 'variables';
 @use 'filters';
+@use 'theme';
 
 // Custom SCSS
 html {
 	position: relative;
 	min-height: 100%;
+	background-color: theme.$black;
 }
 
 body {
@@ -32,7 +34,19 @@ body {
 	height: variables.$footer_height;
 }
 
+.navbar {
+	height: variables.$navbar_height;
+}
+
+.sticky-top {
+	top: variables.$navbar_height;
+}
+
 .btn:focus {
+	@extend %no-outline;
+}
+
+.navbar-toggler:focus {
 	@extend %no-outline;
 }
 
@@ -50,6 +64,21 @@ body {
 }
 .card-img-zoom:hover img {
 	transform: scale(1.2);
+}
+
+.dropdown-item {
+	color: theme.$grey;
+}
+.dropdown-item:active {
+	color: theme.$white;
+	background-color: theme.$black;
+}
+.dropdown-item:hover {
+	color: theme.$white;
+	background-color: theme.$black;
+}
+.dropdown-item:focus {
+	color: theme.$light-grey;
 }
 
 .z-10 {
