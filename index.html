@@ -26,17 +26,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <link-scroll class="nav-link" href="#app">Home <span class="sr-only">(current)</span></link-scroll>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home
+              </a>
+              <div class="dropdown-menu border-0 rounded-0 mt-0 shadow-sm bg-black" aria-labelledby="navbarDropdown">
+                <link-scroll class="dropdown-item" href="#photos">Photos</link-scroll>
+                <link-scroll class="dropdown-item" href="#instagram">My Feed</link-scroll>
+                <link-scroll class="dropdown-item" href="#contact">Contact Me</link-scroll>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="photos.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <link-scroll class="nav-link" href="#instagram">My Feed</link-scroll>
-            </li>
-            <li class="nav-item">
-              <link-scroll class="nav-link" href="#contact">Contact Me</link-scroll>
             </li>
           </ul>
           <span class="navbar-text text-muted">Made with ❤️ by <a href="https://github.com/danielflachica" target="_blank">Daniel</a></span>
