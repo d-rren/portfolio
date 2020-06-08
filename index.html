@@ -18,6 +18,31 @@
   </head>
   <body>
     <div id="app">
+
+      <!-- <app-navbar text="© d.rren photography 2020"></app-navbar> -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black py-0 fixed-top">
+        <button class="navbar-toggler border-0 mx-auto" id="navbarTogglerBtn" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="material-icons">expand_more</i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <link-scroll class="nav-link" href="#app">Home <span class="sr-only">(current)</span></link-scroll>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <link-scroll class="nav-link" href="#instagram">My Feed</link-scroll>
+            </li>
+            <li class="nav-item">
+              <link-scroll class="nav-link" href="#contact">Contact Me</link-scroll>
+            </li>
+          </ul>
+          <span class="navbar-text text-muted">Made with ❤️ by <a href="https://github.com/danielflachica" target="_blank">Daniel</a></span>
+        </div>
+      </nav>
+
       <main class="container-fluid pt-4" id="pageContent">
 
         <link-scroll id="scroll-to-top" href="#app" class="btn btn-black rounded-0 border-0 position-fixed px-3 py-2">

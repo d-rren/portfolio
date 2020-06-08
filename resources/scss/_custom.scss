@@ -36,6 +36,10 @@ body {
 	@extend %no-outline;
 }
 
+.navbar-toggler:focus {
+	@extend %no-outline;
+}
+
 .card {
 	img {
 		@extend %grayscale;
