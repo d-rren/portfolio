@@ -34,6 +34,14 @@ body {
 	height: variables.$footer_height;
 }
 
+.navbar {
+	height: variables.$navbar_height;
+}
+
+.sticky-top {
+	top: variables.$navbar_height;
+}
+
 .btn:focus {
 	@extend %no-outline;
 }
