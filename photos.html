@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="public/css/app.css">
     <!-- Material Icons CSS -->
     <link rel="stylesheet" href="node_modules/material-icons/iconfont/material-icons.css">
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
     <title>d.rren | photography</title>
 
@@ -50,7 +48,7 @@
           <i class="material-icons">keyboard_arrow_up</i>
         </link-scroll>
 
-        <section id="header" class="p-3 p-lg-5 text-center" data-aos="fade-down">
+        <section id="header" class="p-3 p-lg-5 text-center">
           <h1 class="display-1 d-none d-lg-block">
             <a href="index.html" class="text-black">
               @d.rren photography
@@ -63,14 +61,14 @@
           </h1>
         </section>
 
-        <div class="d-flex flex-row overflow-auto sticky-top shadow-sm" id="filterContainer" data-aos="fade-up" data-aos-delay="300">
+        <div class="d-flex flex-row overflow-auto sticky-top shadow-sm" id="filterContainer">
           <button-filter text="All Photos" class="active" onclick="filterSelection('all')"></button-filter>
           <button-filter text="Nature" onclick="filterSelection('nature')"></button-filter>
           <button-filter text="Cars" onclick="filterSelection('cars')"></button-filter>
           <button-filter text="People" onclick="filterSelection('people')"></button-filter>
         </div>
 
-        <section id="photos" class="card-columns mt-4" data-aos="fade-up" data-aos-delay="550">
+        <section id="photos" class="card-columns mt-4">
           <card-image image="public/img/nature/1.jpg" title="Sample Title"
             tags="nature">
             <template v-slot:options>
@@ -110,7 +108,7 @@
           </card-image>
         </section>
 
-        <div class="d-flex justify-content-center overflow-auto" data-aos="zoom-in-left" data-aos-delay="550">
+        <div class="d-flex justify-content-center overflow-auto">
           <a href="index.html" class="link lead">
             <i class="material-icons md-18 mr-1">arrow_back</i>
             Home
@@ -129,8 +127,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- AOS JavScript -->
-    <script src="node_modules/aos/dist/aos.js"></script> 
     <!-- App JavaScript -->
     <script src="public/js/app.js"></script>
   </body>
