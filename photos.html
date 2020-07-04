@@ -24,13 +24,13 @@
         <button class="navbar-toggler border-0 mx-auto" id="navbarTogglerBtn" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <i class="material-icons">expand_more</i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse bg-black p-3 p-sm-0 text-center" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home
               </a>
-              <div class="dropdown-menu border-0 rounded-0 mt-0 shadow-sm bg-black" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu border-0 rounded-0 mt-0 shadow-sm bg-black px-0 pr-sm-4" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="index.html#photos">Photos</a>
                 <a class="dropdown-item" href="index.html#instagram">My Feed</a>
                 <a class="dropdown-item" href="index.html#contact">Contact Me</a>
@@ -40,7 +40,6 @@
               <a class="nav-link" href="photos.html">Gallery</a>
             </li>
           </ul>
-          <span class="navbar-text text-muted">Made with ❤️ by <a href="https://github.com/danielflachica" target="_blank">Daniel</a></span>
         </div>
       </nav>
 
@@ -70,7 +69,7 @@
           <button-filter text="People" onclick="filterSelection('people')"></button-filter>
         </div>
 
-        <section id="photos" class="card-columns mt-4" data-aos="fade-up" data-aos-delay="550">
+        <section id="photos" class="card-columns mt-4">
           <card-image image="public/img/nature/1.jpg" title="Sample Title"
             tags="nature">
             <template v-slot:options>
@@ -110,8 +109,8 @@
           </card-image>
         </section>
 
-        <div class="d-flex justify-content-center overflow-auto" data-aos="zoom-in-left" data-aos-delay="550">
-          <a href="index.html" class="link lead">
+        <div class="d-flex justify-content-center overflow-auto pt-4 pb-5" data-aos="zoom-in-left">
+          <a href="index.html" class="btn btn-outline-primary py-3 px-4 lead">
             <i class="material-icons md-18 mr-1">arrow_back</i>
             Home
           </a>
@@ -119,7 +118,7 @@
 
       </main>
 
-      <app-footer>
+      <app-footer class="bg-primary">
         <span class="text-muted">&copy; 2020 <a href="#" class="text-muted">d.rren photography</a></span>
       </app-footer>
     </div>
