@@ -24,13 +24,13 @@
         <button class="navbar-toggler border-0 mx-auto" id="navbarTogglerBtn" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <i class="material-icons">expand_more</i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse bg-black p-3 p-sm-0 text-center" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown active">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Home
               </a>
-              <div class="dropdown-menu border-0 rounded-0 mt-0 shadow-sm bg-black" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu border-0 rounded-0 mt-0 shadow-sm bg-black px-0 pr-sm-4" aria-labelledby="navbarDropdown">
                 <link-scroll class="dropdown-item" href="#photos">Photos</link-scroll>
                 <link-scroll class="dropdown-item" href="#instagram">My Feed</link-scroll>
                 <link-scroll class="dropdown-item" href="#contact">Contact Me</link-scroll>
@@ -40,7 +40,6 @@
               <a class="nav-link" href="photos.html">Gallery</a>
             </li>
           </ul>
-          <span class="navbar-text text-muted">Made with ❤️ by <a href="https://github.com/danielflachica" target="_blank">Daniel</a></span>
         </div>
       </nav>
 
@@ -52,7 +51,7 @@
 
         <section id="header" class="p-3 p-lg-5 text-center" data-aos="fade-down">
           <h1 class="display-1 d-none d-lg-block">
-            <a href="photos.html" class="text-black">
+            <a href="index.html" class="text-black">
               @d.rren photography
             </a>
           </h1>
@@ -63,7 +62,8 @@
           </h1>
         </section>
 
-        <section id="photos" class="card-columns" data-aos="fade-up" data-aos-delay="550">
+        <!-- <section id="photos" class="card-columns bg-info" data-aos="fade-up" data-aos-delay="550"> -->
+        <section id="photos" class="card-columns">
           <card-image image="public/img/Event Coverage_3.jpg"></card-image>
 
           <card-image image="public/img/Coverage_1.jpg" title="Event Coverage"></card-image>
@@ -87,38 +87,70 @@
           <!-- <card-image image="public/img/Coverage_4.jpg"></card-image> -->
         </section>
 
-        <div class="d-flex justify-content-center overflow-auto" data-aos="zoom-in-right" data-aos-delay="550">
-          <a href="photos.html" class="link lead">
+        <div class="d-flex justify-content-center overflow-auto pt-4 pb-5" data-aos="zoom-in-right">
+          <a href="photos.html" class="btn btn-outline-primary py-3 px-4 lead">
             View More Photos
             <i class="material-icons md-18 ml-1">arrow_forward</i>
           </a>
         </div>
 
-        <section id="instagram" data-aos="fade-up">
-          <card-basic title="Follow me on Instagram!" href="https://www.instagram.com/d.rren/" class="mt-4 text-center">
+        <section id="instagram" class="text-center">
+          <!-- <card-basic title="Follow me on Instagram!" href="https://www.instagram.com/d.rren/" class="mt-4 text-center"> -->
+            <h1 class="mb-4">My Feed</h1>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-5e292708-b926-4e52-8487-51d97730141f"></div>
-          </card-basic>
-        </section>
+          <!-- </card-basic> -->
 
-        <section id="contact" data-aos="fade-up" class="mb-3 mb-lg-4">
-          <card-basic title="Contact Me" class="mt-4 text-center">
-            <p class="lead text-muted">For business inquiries, don't hesitate to reach me at sample@email.com!</p>
-            <button-mail text="Send me an email" icon="mail" class="w-100"></button-mail>
-          </card-basic>
+          <div class="d-flex justify-content-center overflow-auto pb-5" data-aos="zoom-in-right">
+            <a href="https://www.instagram.com/d.rren/" class="btn btn-outline-primary py-3 px-4 lead" target="_blank">
+              Follow me on Instagram!
+            </a>
+          </div>
         </section>
-
       </main>
 
-      <div class="parallax-window d-flex justify-content-center" data-parallax="scroll" data-image-src="https://picsum.photos/1000" style="height: 100vh">
+      <div id="contact" class="position-relative vh-100 p-0">
+
+        <div class="container text-center">
+          <h1>Contact Me</h1>
+          <div class="text-center align-self-center w-100 position-relative z-10">
+
+            <div class="card-deck my-4">
+              <div class="card border-0 shadow">
+                <div class="card-body border-teal">
+                  <h4 class="card-title">
+                    <i class="material-icons mr-2 mb-1">mail</i>Email
+                  </h4>
+                  <a class="card-text lead" href="mailto:darren_lamsin@gmail.com?subject=hotography">darren_lamsin@gmail.com</a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body border-success">
+                  <h4 class="card-title">
+                    <i class="material-icons mr-2 mb-1">phone</i>WhatsApp/Viber
+                  </h4>
+                  <a class="card-text lead" href="tel:+63 920 812 0249">+63 920 812 0249</a>
+                </div>
+              </div>              
+            </div>
+
+            <img src="public/img/svg/undraw_contact_us_15o2.svg" class="img-fluid my-4">
+
+          </div>
+        </div>
+
+        <img src="public/img/svg/wave-btm.svg" class="w-100 m-0 position-absolute b-0" style="z-index: 1">
+      </div>
+
+      <!-- <div class="parallax-window d-flex justify-content-center" data-parallax="scroll" data-image-src="https://picsum.photos/1000" style="height: 100vh">
         <div class="align-self-center bg-black text-white px-3 py-1">
           <h1 class="display-3 d-none d-lg-block">@d.rren photography</h1>
           <h1 class="d-lg-none">@d.rren photography</h1>
         </div>
-      </div>
+      </div> -->
 
-      <app-footer>
-        <span class="text-muted">&copy; 2020 <a href="#" class="text-muted">d.rren photography</a></span>
+      <app-footer color="background: #0099ff">
+        <span class="text-white">&copy; 2020 <a href="#" class="text-white">d.rren photography</a></span>
       </app-footer>
     </div>
 
